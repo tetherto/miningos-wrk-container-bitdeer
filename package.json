@@ -1,6 +1,6 @@
 {
-  "name": "miningos-wrk-container-bitdeer",
-  "version": "0.0.1",
+  "name": "@tetherto/miningos-wrk-container-bitdeer",
+  "version": "1.0.0",
   "description": "MiningOS Worker Container Bitdeer",
   "keywords": [
     "tether"
@@ -11,8 +11,22 @@
     "type": "git",
     "url": "git+https://github.com/tetherto/miningos-wrk-container-bitdeer.git"
   },
-  "engine": {
-    "node": ">=20.0"
+  "homepage": "https://github.com/tetherto/miningos-wrk-container-bitdeer#readme",
+  "bugs": {
+    "url": "https://github.com/tetherto/miningos-wrk-container-bitdeer/issues"
+  },  
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "worker.js",
+    "workers/",
+    "mock/"
+  ],
+  "main": "worker.js",  
+  "type": "commonjs",
+  "bin": {
+    "miningos-wrk-container-bitdeer": "worker.js"
   },
   "scripts": {
     "lint": "standard",

@@ -34,7 +34,7 @@ module.exports = function (ctx) {
 
     return {
       _pressureEnabled: ctx.cap.includes('P'),
-      RunningState: '0',
+      RunningState: '1',
       AlarmState: '0',
       AlarmInfo: ctx.error ? ['OilPump1 error', 'OilPump2 error', 'Unknown_test'] : [],
       DeviceInfo: {
