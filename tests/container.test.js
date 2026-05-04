@@ -1,8 +1,8 @@
 'use strict'
 
-const { getDefaultConf, testExecutor } = require('miningos-tpl-wrk-container/tests/container.test')
+const { getDefaultConf, testExecutor } = require('@tetherto/miningos-tpl-wrk-container/tests/container.test')
 const Container = require('../workers/lib/container')
-const MQTTFacility = require('svc-facs-mqtt')
+const MQTTFacility = require('@tetherto/svc-facs-mqtt')
 const { promiseSleep: sleep } = require('@bitfinex/lib-js-util-promise')
 const aedes = require('aedes')()
 const server = require('net').createServer(aedes.handle)

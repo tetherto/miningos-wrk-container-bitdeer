@@ -37,19 +37,22 @@
     "test:coverage": "brittle --coverage tests/{,**/}*.test.js"
   },
   "dependencies": {
+    "@bitfinex/bfx-svc-boot-js": "1.2.0",
     "@bitfinex/lib-js-util-base": "git+https://github.com/bitfinexcom/lib-js-util-base.git",
     "@bitfinex/lib-js-util-promise": "git+https://github.com/bitfinexcom/lib-js-util-promise.git",
     "@bitfinex/lib-js-util-task-queue": "git+https://github.com/bitfinexcom/lib-js-util-task-queue.git",
     "async": "3.2.6",
-    "bfx-facs-interval": "git+https://github.com/bitfinexcom/bfx-facs-interval.git",
-    "miningos-tpl-wrk-container": "git+https://github.com/tetherto/miningos-tpl-wrk-container.git",
-    "miningos-lib-stats": "git+https://github.com/tetherto/miningos-lib-stats.git",
-    "svc-facs-mqtt": "git+https://github.com/tetherto/svc-facs-mqtt.git"
+    "@tetherto/miningos-tpl-wrk-container": "git+https://github.com/tetherto/miningos-tpl-wrk-container.git",
+    "@tetherto/miningos-lib-stats": "git+https://github.com/tetherto/miningos-lib-stats.git#v1.0.0",
+    "@tetherto/svc-facs-mqtt": "git+https://github.com/tetherto/svc-facs-mqtt.git#v1.0.0"
   },
   "devDependencies": {
     "aedes": "0.50.1",
     "brittle": "3.16.3",
     "standard": "17.1.2",
-    "miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git"
-  }
+    "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git"
+  },
+  "overrides": {
+    "uuid": "14.0.0"
+  }  
 }

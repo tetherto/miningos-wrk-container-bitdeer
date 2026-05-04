@@ -1,6 +1,6 @@
 'use strict'
 
-const BaseContainer = require('miningos-tpl-wrk-container/workers/lib/base')
+const BaseContainer = require('@tetherto/miningos-tpl-wrk-container/workers/lib/base')
 const { getPDUValues, unMapPDU, unMapSocket, MAPPINGS } = require('./utils/pduOps')
 const { TaskQueue } = require('@bitfinex/lib-js-util-task-queue')
 const { optimizeSocketCalls } = require('./utils/optimize')

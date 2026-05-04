@@ -1,6 +1,6 @@
 'use strict'
 
-const WrkRack = require('miningos-tpl-wrk-container/workers/rack.container.wrk')
+const WrkRack = require('@tetherto/miningos-tpl-wrk-container/workers/rack.container.wrk')
 const Container = require('./container')
 const async = require('async')
 
@@ -11,7 +11,7 @@ class WrkContainerRack extends WrkRack {
     super.init()
 
     this.setInitFacs([
-      ['fac', 'svc-facs-mqtt', 'm0', 'm0', {
+      ['fac', '@tetherto/svc-facs-mqtt', 'm0', 'm0', {
         port: this.ctx.mqttPort || DEFAULT_MQTT_PORT
       }, 0]
     ])

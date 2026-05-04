@@ -5,7 +5,7 @@ const { getSchema } = require(path.join(process.cwd(), 'tests/utils'))
 const { setTemperatureSettingsExecutor } = require('../executors')
 let getConfigExecutor
 try {
-  getConfigExecutor = require('miningos-tpl-wrk-container/tests/executors').getConfigExecutor
+  getConfigExecutor = require('@tetherto/miningos-tpl-wrk-container/tests/executors').getConfigExecutor
 } catch (e) {
   // Fallback if getConfigExecutor is not available
   getConfigExecutor = async ({ dev }) => {
