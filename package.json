@@ -37,14 +37,14 @@
     "test:coverage": "brittle --coverage tests/{,**/}*.test.js"
   },
   "dependencies": {
-    "@bitfinex/bfx-svc-boot-js": "1.2.0",
-    "@bitfinex/lib-js-util-base": "git+https://github.com/bitfinexcom/lib-js-util-base.git",
-    "@bitfinex/lib-js-util-promise": "git+https://github.com/bitfinexcom/lib-js-util-promise.git",
-    "@bitfinex/lib-js-util-task-queue": "git+https://github.com/bitfinexcom/lib-js-util-task-queue.git",
+    "@bitfinex/bfx-svc-boot-js": "1.3.1",
+    "@bitfinex/lib-js-util-base": "^2.1.0",
+    "@bitfinex/lib-js-util-promise": "^1.1.0",
+    "@bitfinex/lib-js-util-task-queue": "^1.0.0",
     "async": "3.2.6",
     "@tetherto/miningos-tpl-wrk-container": "git+https://github.com/tetherto/miningos-tpl-wrk-container.git",
     "@tetherto/miningos-lib-stats": "git+https://github.com/tetherto/miningos-lib-stats.git#v1.0.0",
-    "@tetherto/svc-facs-mqtt": "git+https://github.com/tetherto/svc-facs-mqtt.git#v1.0.0"
+    "@tetherto/svc-facs-mqtt": "^1.0.1"
   },
   "devDependencies": {
     "aedes": "0.50.1",
